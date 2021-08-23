@@ -19,3 +19,7 @@ button:focus {
 * {
   --tw-ring-color: none;
 }
+
+input[type="checkbox"]{
+  color: #c9dc90;
+}

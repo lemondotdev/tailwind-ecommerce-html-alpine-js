@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Lemon.dev</title>
+  <link rel="stylesheet" href="./dist/style.css">
+</head>
+
+<body class="bg-yellow">
+  <div class="lemon-wrap">
+    <!-- Checkout - Theme -->   
+    <div class="bg-white">
+    <!-- Background color split screen for large screens -->
+    <div class="hidden lg:block fixed top-0 left-0 w-1/2 h-full bg-white" aria-hidden="true"></div>
+    <div class="hidden lg:block fixed top-0 right-0 w-1/2 h-full bg-themeColorHover" aria-hidden="true"></div>
+  
+    <header class="relative max-w-7xl mx-auto  py-6 bg-transparent lg:grid lg:grid-cols-2 lg:gap-x-16 lg:px-8 lg:pt-16 lg:pb-10">
+      <div class="max-w-2xl mx-auto flex px-4 lg:max-w-lg lg:w-full lg:px-0">
+        <a href="#">
+          <span class="sr-only">Workflow</span>
+          <img class="lg:w-30" src="https://lemon.dev/wp-content/themes/lemon/public/images/lemondev-logo.svg" alt="" width="150">
+        </a>
+      </div>
+    </header>
+  
+    <main class="relative grid grid-cols-1 gap-x-16 max-w-7xl mx-auto lg:px-8 lg:grid-cols-2">
+      <h1 class="sr-only">Checkout</h1>
+  
+      <section aria-labelledby="summary-heading" class="bg-themeColorHover pt-6 pb-12 md:px-10 lg:max-w-lg lg:w-full lg:mx-auto lg:px-0 lg:pt-0 lg:pb-24 lg:bg-transparent lg:row-start-1 lg:col-start-2">
+        <div class="max-w-2xl mx-auto px-4 lg:max-w-none lg:px-0">
+          <h2 id="summary-heading" class="sr-only">Order summary</h2>
+  
+          <dl>
+            <dt class="text-sm font-medium">Amount due</dt>
+            <dd class="mt-1 text-3xl font-extrabold ">$232.00</dd>
+          </dl>
+  
+          <ul role="list" class="text-sm font-medium divide-y divide-white divide-opacity-10">
+            <li class="flex items-start py-6 space-x-4">
+              <img src="https://tailwindui.com/img/ecommerce-images/checkout-page-07-product-01.jpg" alt="Front of zip tote bag with white canvas, white handles, and black drawstring top." class="flex-none w-20 h-20 rounded-md object-center object-cover">
+              <div class="flex-auto space-y-1">
+                <h3 class="">High Wall Tote</h3>
+                <p>White and black</p>
+                <p>15L</p>
+              </div>
+              <p class="flex-none text-base font-medium ">$210.00</p>
+            </li>
+  
+            <!-- More products... -->
+          </ul>
+  
+          <dl class="text-sm font-medium space-y-6 border-t border-white border-opacity-10 pt-6">
+            <div class="flex items-center justify-between">
+              <dt>Subtotal</dt>
+              <dd>$570.00</dd>
+            </div>
+  
+            <div class="flex items-center justify-between">
+              <dt>Shipping</dt>
+              <dd>$25.00</dd>
+            </div>
+  
+            <div class="flex items-center justify-between">
+              <dt>Taxes</dt>
+              <dd>$47.60</dd>
+            </div>
+  
+            <div class="flex items-center justify-between border-t border-white border-opacity-10  pt-6">
+              <dt class="text-base">Total</dt>
+              <dd class="text-base">$642.60</dd>
+            </div>
+          </dl>
+        </div>
+      </section>
+  
+      <section aria-labelledby="payment-and-shipping-heading" class="py-16 lg:max-w-lg lg:w-full lg:mx-auto lg:pt-0 lg:pb-24 lg:row-start-1 lg:col-start-1">
+        <h2 id="payment-and-shipping-heading" class="sr-only">Payment and shipping details</h2>
+  
+        <form>
+          <div class="max-w-2xl mx-auto px-4 lg:max-w-none lg:px-0">
+            <div>
+              <h3 id="contact-info-heading" class="text-lg font-medium text-gray-900">Contact information</h3>
+  
+              <div class="mt-6">
+                <label for="email-address" class="block text-sm font-medium text-gray-700">Email address</label>
+                <div class="mt-1">
+                  <input type="email" id="email-address" name="email-address" autocomplete="email" class="block w-full border-gray-300 rounded-md shadow-sm focus:ring-themeColorHover focus:border-themeColorHover sm:text-sm">
+                </div>
+              </div>
+            </div>
+  
+            <div class="mt-10">
+              <h3 id="payment-heading" class="text-lg font-medium text-gray-900">Payment details</h3>
+  
+              <div class="mt-6 grid grid-cols-3 sm:grid-cols-4 gap-y-6 gap-x-4">
+                <div class="col-span-3 sm:col-span-4">
+                  <label for="card-number" class="block text-sm font-medium text-gray-700">Card number</label>
+                  <div class="mt-1">
+                    <input type="text" id="card-number" name="card-number" autocomplete="cc-number" class="block w-full border-gray-300 rounded-md shadow-sm focus:ring-themeColorHover focus:border-themeColorHover sm:text-sm">
+                  </div>
+                </div>
+  
+                <div class="col-span-2 sm:col-span-3">
+                  <label for="expiration-date" class="block text-sm font-medium text-gray-700">Expiration date (MM/YY)</label>
+                  <div class="mt-1">
+                    <input type="text" name="expiration-date" id="expiration-date" autocomplete="cc-exp" class="block w-full border-gray-300 rounded-md shadow-sm focus:ring-themeColorHover focus:border-themeColorHover sm:text-sm">
+                  </div>
+                </div>
+  
+                <div>
+                  <label for="cvc" class="block text-sm font-medium text-gray-700">CVC</label>
+                  <div class="mt-1">
+                    <input type="text" name="cvc" id="cvc" autocomplete="csc" class="block w-full border-gray-300 rounded-md shadow-sm focus:ring-themeColorHover focus:border-themeColorHover sm:text-sm">
+                  </div>
+                </div>
+              </div>
+            </div>
+  
+            <div class="mt-10">
+              <h3 id="shipping-heading" class="text-lg font-medium text-gray-900">Shipping address</h3>
+  
+              <div class="mt-6 grid grid-cols-1 gap-y-6 gap-x-4 sm:grid-cols-3">
+                <div class="sm:col-span-3">
+                  <label for="address" class="block text-sm font-medium text-gray-700">Address</label>
+                  <div class="mt-1">
+                    <input type="text" id="address" name="address" autocomplete="street-address" class="block w-full border-gray-300 rounded-md shadow-sm focus:ring-themeColorHover focus:border-themeColorHover sm:text-sm">
+                  </div>
+                </div>
+  
+                <div>
+                  <label for="city" class="block text-sm font-medium text-gray-700">City</label>
+                  <div class="mt-1">
+                    <input type="text" id="city" name="city" class="block w-full border-gray-300 rounded-md shadow-sm focus:ring-themeColorHover focus:border-themeColorHover sm:text-sm">
+                  </div>
+                </div>
+  
+                <div>
+                  <label for="province" class="block text-sm font-medium text-gray-700">Province</label>
+                  <div class="mt-1">
+                    <input type="text" id="province" name="province" class="block w-full border-gray-300 rounded-md shadow-sm focus:ring-themeColorHover focus:border-themeColorHover sm:text-sm">
+                  </div>
+                </div>
+  
+                <div>
+                  <label for="postal-code" class="block text-sm font-medium text-gray-700">Postal code</label>
+                  <div class="mt-1">
+                    <input type="text" id="postal-code" name="postal-code" autocomplete="postal-code" class="block w-full border-gray-300 rounded-md shadow-sm focus:ring-themeColorHover focus:border-themeColorHover sm:text-sm">
+                  </div>
+                </div>
+              </div>
+            </div>
+  
+            <div class="mt-10">
+              <h3 class="text-lg font-medium text-gray-900">Billing information</h3>
+  
+              <div class="mt-6 flex items-center">
+                <input id="same-as-shipping" name="same-as-shipping" type="checkbox" checked class="h-4 w-4 border-gray-300 rounded focus:ring-themeColorHover text-black">
+                <div class="ml-2">
+                  <label for="same-as-shipping" class="text-sm font-medium text-gray-900">Same as shipping information</label>
+                </div>
+              </div>
+            </div>
+  
+            <div class="mt-10 flex justify-end pt-6 border-t border-gray-200">
+              <button type="submit" class="bg-themeColorHover border border-transparent rounded-md shadow-sm py-2 px-4 text-sm font-medium  hover:bg-themeColorHover focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-offset-gray-50 focus:ring-themeColorHover">Pay now</button>
+            </div>
+          </div>
+        </form>
+      </section>
+    </main>
+    </div>
+  
+    <!-- Checkout - Theme end-->
+  </div>
+  <script src="https://cdn.jsdelivr.net/gh/alpinejs/alpine@v2.8.2/dist/alpine.min.js" defer></script>
+  <script>
+  </script>
+</body>
+</html>

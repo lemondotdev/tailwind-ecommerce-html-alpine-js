@@ -27693,6 +27693,10 @@ button:focus {
   --tw-ring-color: none;
 }
 
+input[type="checkbox"]{
+  color: #c9dc90;
+}
+
 @media (min-width: 640px) {
   .sm\:container {
     width: 100%;
