@@ -6,4 +6,4 @@ Pages and Components with Alpine Js for e-commerce
  npm install
 
 # how to run
-Live server from Visual Studio
+Live server
