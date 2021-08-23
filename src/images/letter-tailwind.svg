@@ -19,18 +19,18 @@
 <circle cx="56" cy="49" r="16" stroke="#111827" stroke-width="2"/>
 </g>
 <g opacity="0.2" filter="url(#filter5_f)">
-<path d="M34 71H78L83.1056 60.7889C84.4354 58.1292 82.5014 55 79.5279 55H32.4721C29.4986 55 27.5646 58.1292 28.8944 60.7889L34 71Z" fill="#176795"/>
+<path d="M34 71H78L83.1056 60.7889C84.4354 58.1292 82.5014 55 79.5279 55H32.4721C29.4986 55 27.5646 58.1292 28.8944 60.7889L34 71Z" fill="#c9dc90"/>
 </g>
 <g filter="url(#filter6_dd)">
 <rect x="28" y="27" width="56" height="40" rx="4" fill="white"/>
 <rect x="27.5" y="26.5" width="57" height="41" rx="4.5" stroke="#121826" stroke-opacity="0.08"/>
 </g>
 <path d="M83 35L36 66H80C81.6569 66 83 64.6569 83 63V35Z" fill="#F3F4F6"/>
-<path d="M30 47H82" stroke="#176795" stroke-width="2"/>
-<path d="M56 29V65" stroke="#176795" stroke-width="2"/>
-<path d="M65.1213 42.1213C63.9497 43.2929 56.5 47.5 56 47C55.5 46.5 59.7071 39.0502 60.8787 37.8786C62.0503 36.7071 63.9497 36.7071 65.1213 37.8786C66.2929 39.0502 66.2929 40.9497 65.1213 42.1213Z" stroke="#176795" stroke-width="2"/>
-<path d="M47 42.1213C48.1716 43.2929 55.5 47.5 56 47C56.5 46.5 52.4142 39.0502 51.2427 37.8786C50.0711 36.7071 48.1716 36.7071 47 37.8786C45.8284 39.0502 45.8284 40.9497 47 42.1213Z" stroke="#176795" stroke-width="2"/>
-<path d="M61 52L56 47L51 52" stroke="#176795" stroke-width="2" stroke-linecap="round"/>
+<path d="M30 47H82" stroke="#c9dc90" stroke-width="2"/>
+<path d="M56 29V65" stroke="#c9dc90" stroke-width="2"/>
+<path d="M65.1213 42.1213C63.9497 43.2929 56.5 47.5 56 47C55.5 46.5 59.7071 39.0502 60.8787 37.8786C62.0503 36.7071 63.9497 36.7071 65.1213 37.8786C66.2929 39.0502 66.2929 40.9497 65.1213 42.1213Z" stroke="#c9dc90" stroke-width="2"/>
+<path d="M47 42.1213C48.1716 43.2929 55.5 47.5 56 47C56.5 46.5 52.4142 39.0502 51.2427 37.8786C50.0711 36.7071 48.1716 36.7071 47 37.8786C45.8284 39.0502 45.8284 40.9497 47 42.1213Z" stroke="#c9dc90" stroke-width="2"/>
+<path d="M61 52L56 47L51 52" stroke="#c9dc90" stroke-width="2" stroke-linecap="round"/>
 </g>
 <defs>
 <filter id="filter0_f" x="14.5" y="7.5" width="83" height="83" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">

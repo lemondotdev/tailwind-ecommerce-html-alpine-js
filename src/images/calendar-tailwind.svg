@@ -26,7 +26,7 @@
 </g>
 </g>
 <g opacity="0.3" filter="url(#filter7_f)">
-<path d="M42 73H70L75.1056 62.7889C76.4354 60.1292 74.5014 57 71.5279 57H40.4721C37.4986 57 35.5646 60.1292 36.8944 62.7889L42 73Z" fill="#176795"/>
+<path d="M42 73H70L75.1056 62.7889C76.4354 60.1292 74.5014 57 71.5279 57H40.4721C37.4986 57 35.5646 60.1292 36.8944 62.7889L42 73Z" fill="#c9dc90"/>
 </g>
 <g filter="url(#filter8_dd)">
 <path d="M35 24H77C79.2091 24 81 25.7909 81 28V67C81 68.1046 80.1046 69 79 69H33C31.8954 69 31 68.1046 31 67V28C31 25.7909 32.7909 24 35 24Z" fill="white"/>
@@ -42,12 +42,12 @@
 <rect opacity="0.12" x="50" y="34" width="1" height="32" fill="#9CA3AF"/>
 <rect opacity="0.12" x="61" y="34" width="1" height="32" fill="#9CA3AF"/>
 <rect opacity="0.12" x="72" y="34" width="1" height="32" fill="#9CA3AF"/>
-<path d="M83.5 32V32.5H83H29H28.5V32V25C28.5 23.067 30.067 21.5 32 21.5H80C81.933 21.5 83.5 23.067 83.5 25V32Z" fill="#176795" stroke="#176795"/>
+<path d="M83.5 32V32.5H83H29H28.5V32V25C28.5 23.067 30.067 21.5 32 21.5H80C81.933 21.5 83.5 23.067 83.5 25V32Z" fill="#c9dc90" stroke="#c9dc90"/>
 <rect x="36" y="41" width="2" height="2" rx="1" fill="#E5E7EB"/>
 <rect x="36" y="52" width="2" height="2" rx="1" fill="#E5E7EB"/>
 <rect x="36" y="63" width="2" height="2" rx="1" fill="#E5E7EB"/>
 <rect x="47" y="41" width="2" height="2" rx="1" fill="#E5E7EB"/>
-<rect x="47" y="52" width="2" height="2" rx="1" fill="#176795"/>
+<rect x="47" y="52" width="2" height="2" rx="1" fill="#c9dc90"/>
 <rect x="47" y="63" width="2" height="2" rx="1" fill="#E5E7EB"/>
 <rect x="58" y="41" width="2" height="2" rx="1" fill="#E5E7EB"/>
 <rect x="58" y="52" width="2" height="2" rx="1" fill="#E5E7EB"/>
