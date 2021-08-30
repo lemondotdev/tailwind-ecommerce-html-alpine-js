@@ -1,0 +1,68 @@
+footer.bg-gray-50(aria-labelledby='footer-heading')
+  h2#footer-heading.sr-only Footer
+  .max-w-7xl.mx-auto.px-4(class='sm:px-6 lg:px-8')
+    .border-t.border-gray-200.py-20
+      .grid.grid-cols-1(class='md:grid-cols-12 md:grid-flow-col md:gap-x-8 md:gap-y-16 md:auto-rows-min')
+        // Sitemap sections
+        .mt-10.col-span-6.grid.grid-cols-1.gap-8(class='sm:grid-cols-3 md:mt-0 md:row-start-1 md:col-start-3 md:col-span-8 lg:col-start-1 lg:col-span-6')
+          .grid.grid-cols-1.gap-y-12(class='sm:col-span-2 sm:grid-cols-2 sm:gap-x-8')
+            // Image section
+            div
+              img(class='lg:w-30' src='https://lemon.dev/wp-content/themes/lemon/public/images/lemondev-logo.svg' alt='' width='120')
+            div
+              h3.text-sm.font-medium.text-gray-900
+                | Products
+              ul.mt-6.space-y-6(role='list')
+                li.text-sm
+                  a.text-gray-500(href='#' class='hover:text-gray-600')
+                    | Bags
+                li.text-sm
+                  a.text-gray-500(href='#' class='hover:text-gray-600')
+                    | Tees
+                li.text-sm
+                  a.text-gray-500(href='#' class='hover:text-gray-600')
+                    | Objects
+                li.text-sm
+                  a.text-gray-500(href='#' class='hover:text-gray-600')
+                    | Home Goods
+                li.text-sm
+                  a.text-gray-500(href='#' class='hover:text-gray-600')
+                    | Accessories
+          div
+            h3.text-sm.font-medium.text-gray-900
+              | Customer Service
+            ul.mt-6.space-y-6(role='list')
+              li.text-sm
+                a.text-gray-500(href='#' class='hover:text-gray-600')
+                  | Contact
+              li.text-sm
+                a.text-gray-500(href='#' class='hover:text-gray-600')
+                  | Shipping
+              li.text-sm
+                a.text-gray-500(href='#' class='hover:text-gray-600')
+                  | Returns
+              li.text-sm
+                a.text-gray-500(href='#' class='hover:text-gray-600')
+                  | Warranty
+              li.text-sm
+                a.text-gray-500(href='#' class='hover:text-gray-600')
+                  | Secure Payments
+              li.text-sm
+                a.text-gray-500(href='#' class='hover:text-gray-600')
+                  | FAQ
+              li.text-sm
+                a.text-gray-500(href='#' class='hover:text-gray-600')
+                  | Find a store
+        // Newsletter section
+        .mt-12(class='md:mt-0 md:row-start-2 md:col-start-3 md:col-span-8 lg:row-start-1 lg:col-start-9 lg:col-span-4')
+          h3.text-sm.font-medium.text-gray-900 Sign up for our newsletter
+          p.mt-6.text-sm.text-gray-500 The latest deals and savings, sent to your inbox weekly.
+          form.mt-2.flex(class='sm:max-w-md')
+            label.sr-only(for='email-address') Email address
+            input#email-address.appearance-none.min-w-0.w-full.bg-white.border.border-gray-300.rounded-md.shadow-sm.py-2.px-4.text-base.text-gray-900.placeholder-gray-500(type='text' autocomplete='email' required='' class='focus:outline-none focus:border-themeColorHover focus:ring-1 focus:ring-themeColorHover')
+            .ml-4.flex-shrink-0
+              button.w-full.bg-themeColor.border.border-transparent.rounded-md.shadow-sm.py-2.px-4.flex.items-center.justify-center.text-base.font-medium(type='submit' class='hover:bg-themeColorHover focus:outline-none focus:ring-2 focus:ring-offset-2 focus:bg-themeColorHover')
+                | Sign up
+    .border-t.border-gray-100.py-10.text-center
+      p.text-sm.text-gray-500 &copy; 2021 Lemon.Dev, Inc. All rights reserved.
+

@@ -1,0 +1,146 @@
+// Product info
+.mt-10.px-4(class='sm:px-0 sm:mt-16 lg:mt-0')
+  h1.text-3xl.font-extrabold.tracking-tight.text-gray-900 Zip Tote Basket
+  .mt-3
+    h2.sr-only Product information
+    p.text-3xl.text-gray-900 $140
+  // Description
+  .mt-6
+    h3.sr-only Description
+    .text-base.text-gray-700.space-y-6
+      p
+        | The Zip Tote Basket is the perfect midpoint between shopping tote and comfy backpack. With convertable straps, you can hand carry, should sling, or backpack this convenient and spacious bag. The zip top and durable cavnas construction keeps your goods protected for all-day use.
+  form.mt-6
+    // Size picker
+    .mt-8
+      .flex.items-center.justify-between
+        h2.text-sm.font-medium.text-gray-900 Size
+        a.text-sm.font-medium(href='#') See sizing chart
+      fieldset.mt-2(x-data='window.Components.radioGroup({ initialCheckedIndex: 2 })' x-init='init()')
+        legend.sr-only
+          | Choose a size
+        .grid.grid-cols-3.gap-3(class='sm:grid-cols-6')
+          label.border.rounded-md.py-3.px-3.flex.items-center.justify-center.text-sm.font-medium.uppercase.cursor-pointer.bg-themeColor.border-transparent.undefined(x-radio-group-option='' class='sm:flex-1 focus:outline-none hover:bg-themeColorHover' x-description='In Stock: "cursor-pointer", Out of Stock: "opacity-25 cursor-not-allowed"	Active: "ring-2 ring-offset-2 ring-indigo-500"	Checked: "bg-indigo-600 border-transparent  hover:bg-indigo-700", Not Checked: "bg-white border-gray-200 text-gray-900 hover:bg-gray-50"' :class="{ 'ring-2 ring-offset-2 ring-themeColor': (active === 'XXS'), 'undefined': !(active === 'XXS'), 'bg-themeColor border-transparent  hover:bg-themeColorHover': (value === 'XXS'), 'bg-white border-gray-200 text-gray-900 hover:bg-gray-50': !(value === 'XXS') }")
+            input.sr-only(type='radio' x-model='value' name='size-choice' value='XXS' aria-labelledby='size-choice-0-label')
+            p#size-choice-0-label
+              | XXS
+          label.border.rounded-md.py-3.px-3.flex.items-center.justify-center.text-sm.font-medium.uppercase.cursor-pointer.undefined.bg-white.border-gray-200.text-gray-900(x-radio-group-option='' class='sm:flex-1 focus:outline-none hover:bg-gray-50' x-description='In Stock: "cursor-pointer", Out of Stock: "opacity-25 cursor-not-allowed"	Active: "ring-2 ring-offset-2 ring-indigo-500"	Checked: "bg-indigo-600 border-transparent  hover:bg-indigo-700", Not Checked: "bg-white border-gray-200 text-gray-900 hover:bg-gray-50"' :class="{ 'ring-2 ring-offset-2 ring-themeColor': (active === 'XS'), 'undefined': !(active === 'XS'), 'bg-themeColor border-transparent  hover:bg-themeColorHover': (value === 'XS'), 'bg-white border-gray-200 text-gray-900 hover:bg-gray-50': !(value === 'XS') }")
+            input.sr-only(type='radio' x-model='value' name='size-choice' value='XS' aria-labelledby='size-choice-1-label')
+            p#size-choice-1-label
+              | XS
+          label.border.rounded-md.py-3.px-3.flex.items-center.justify-center.text-sm.font-medium.uppercase.cursor-pointer.undefined.bg-white.border-gray-200.text-gray-900(x-radio-group-option='' class='sm:flex-1 focus:outline-none hover:bg-gray-50' x-description='In Stock: "cursor-pointer", Out of Stock: "opacity-25 cursor-not-allowed"	Active: "ring-2 ring-offset-2 ring-indigo-500"	Checked: "bg-indigo-600 border-transparent  hover:bg-indigo-700", Not Checked: "bg-white border-gray-200 text-gray-900 hover:bg-gray-50"' :class="{ 'ring-2 ring-offset-2 ring-themeColor': (active === 'S'), 'undefined': !(active === 'S'), 'bg-themeColor border-transparent  hover:bg-themeColorHover': (value === 'S'), 'bg-white border-gray-200 text-gray-900 hover:bg-gray-50': !(value === 'S') }")
+            input.sr-only(type='radio' x-model='value' name='size-choice' value='S' aria-labelledby='size-choice-2-label')
+            p#size-choice-2-label
+              | S
+          label.border.rounded-md.py-3.px-3.flex.items-center.justify-center.text-sm.font-medium.uppercase.cursor-pointer.undefined.bg-white.border-gray-200.text-gray-900(x-radio-group-option='' class='sm:flex-1 focus:outline-none hover:bg-gray-50' x-description='In Stock: "cursor-pointer", Out of Stock: "opacity-25 cursor-not-allowed"	Active: "ring-2 ring-offset-2 ring-indigo-500"	Checked: "bg-indigo-600 border-transparent  hover:bg-indigo-700", Not Checked: "bg-white border-gray-200 text-gray-900 hover:bg-gray-50"' :class="{ 'ring-2 ring-offset-2 ring-themeColor': (active === 'M'), 'undefined': !(active === 'M'), 'bg-themeColor border-transparent  hover:themeColorHover': (value === 'M'), 'bg-white border-gray-200 text-gray-900 hover:bg-gray-50': !(value === 'M') }")
+            input.sr-only(type='radio' x-model='value' name='size-choice' value='M' aria-labelledby='size-choice-3-label')
+            p#size-choice-3-label
+              | M
+          label.border.rounded-md.py-3.px-3.flex.items-center.justify-center.text-sm.font-medium.uppercase.cursor-pointer.undefined.bg-white.border-gray-200.text-gray-900(x-radio-group-option='' class='sm:flex-1 focus:outline-none hover:bg-gray-50' x-description='In Stock: "cursor-pointer", Out of Stock: "opacity-25 cursor-not-allowed"	Active: "ring-2 ring-offset-2 ring-indigo-500"	Checked: "bg-indigo-600 border-transparent  hover:bg-indigo-700", Not Checked: "bg-white border-gray-200 text-gray-900 hover:bg-gray-50"' :class="{ 'ring-2 ring-offset-2 ring-themeColor': (active === 'L'), 'undefined': !(active === 'L'), 'bg-themeColor border-transparent  hover:themeColorHover': (value === 'L'), 'bg-white border-gray-200 text-gray-900 hover:bg-gray-50': !(value === 'L') }")
+            input.sr-only(type='radio' x-model='value' name='size-choice' value='L' aria-labelledby='size-choice-4-label')
+            p#size-choice-4-label
+              | L
+          label.border.rounded-md.py-3.px-3.flex.items-center.justify-center.text-sm.font-medium.uppercase.opacity-25.cursor-not-allowed.undefined.bg-white.border-gray-200.text-gray-900(x-radio-group-option='' class='sm:flex-1 hover:bg-gray-50' x-description='In Stock: "cursor-pointer", Out of Stock: "opacity-25 cursor-not-allowed"	Active: "ring-2 ring-offset-2 ring-indigo-500"	Checked: "bg-indigo-600 border-transparent  hover:bg-indigo-700", Not Checked: "bg-white border-gray-200 text-gray-900 hover:bg-gray-50"' :class="{ 'ring-2 ring-offset-2 ring-themeColor': (active === 'XL'), 'undefined': !(active === 'XL'), 'bg-themeColor border-transparent  hover:themeColorHover': (value === 'XL'), 'bg-white border-gray-200 text-gray-900 hover:bg-gray-50': !(value === 'XL') }")
+            input.sr-only(type='radio' x-model='value' name='size-choice' value='XL' disabled='' aria-labelledby='size-choice-5-label')
+            p#size-choice-5-label
+              | XL
+    .mt-10.flex(class='sm:flex-col1')
+      button.max-w-xs.flex-1.bg-gray-900.border.border-transparent.rounded-md.py-3.px-8.flex.items-center.justify-center.text-white.font-medium(type='submit' class='hover:bg-gray-800 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-offset-gray-50 focus:ring-bg-gray-800 sm:w-full') Add to bag
+      button.ml-4.py-3.px-3.rounded-md.flex.items-center.justify-center.text-gray-400(type='button' class='hover:bg-gray-100 hover:text-gray-500')
+        // Heroicon name: outline/heart
+        svg.h-6.w-6.flex-shrink-0(xmlns='http://www.w3.org/2000/svg' fill='none' viewbox='0 0 24 24' stroke='currentColor' aria-hidden='true')
+          path(stroke-linecap='round' stroke-linejoin='round' stroke-width='2' d='M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z')
+        span.sr-only Add to favorites
+  // Policies
+  section.mt-10(aria-labelledby='policies-heading')
+    h2#policies-heading.sr-only Our Policies
+    dl.grid.grid-cols-1.gap-6(class='sm:grid-cols-2 lg:grid-cols-1 xl:grid-cols-2')
+      .bg-gray-50.border.border-gray-200.rounded-lg.p-6.text-center
+        dt
+          svg.mx-auto.h-6.w-6.flex-shrink-0.text-gray-400(x-description='Heroicon name: outline/globe' xmlns='http://www.w3.org/2000/svg' fill='none' viewbox='0 0 24 24' stroke='currentColor' aria-hidden='true')
+            path(stroke-linecap='round' stroke-linejoin='round' stroke-width='2' d='M3.055 11H5a2 2 0 012 2v1a2 2 0 002 2 2 2 0 012 2v2.945M8 3.935V5.5A2.5 2.5 0 0010.5 8h.5a2 2 0 012 2 2 2 0 104 0 2 2 0 012-2h1.064M15 20.488V18a2 2 0 012-2h3.064M21 12a9 9 0 11-18 0 9 9 0 0118 0z')
+          span.mt-4.text-sm.font-medium.text-gray-900
+            | International delivery
+        dd.mt-1.text-sm.text-gray-500
+          | Get your order in 2 years
+      .bg-gray-50.border.border-gray-200.rounded-lg.p-6.text-center
+        dt
+          svg.mx-auto.h-6.w-6.flex-shrink-0.text-gray-400(x-description='Heroicon name: outline/currency-dollar' xmlns='http://www.w3.org/2000/svg' fill='none' viewbox='0 0 24 24' stroke='currentColor' aria-hidden='true')
+            path(stroke-linecap='round' stroke-linejoin='round' stroke-width='2' d='M12 8c-1.657 0-3 .895-3 2s1.343 2 3 2 3 .895 3 2-1.343 2-3 2m0-8c1.11 0 2.08.402 2.599 1M12 8V7m0 1v8m0 0v1m0-1c-1.11 0-2.08-.402-2.599-1M21 12a9 9 0 11-18 0 9 9 0 0118 0z')
+          span.mt-4.text-sm.font-medium.text-gray-900
+            | Loyalty rewards
+        dd.mt-1.text-sm.text-gray-500
+          | Don&apos;t look at other tees
+  // end Policies
+  // Dropdown Tabs Tailwind Component Details
+  section.mt-12(aria-labelledby='details-heading')
+    h2#details-heading.sr-only Additional details
+    .border-t.divide-y.divide-gray-200
+      div(x-data='{ open: true }')
+        h3
+          button.group.relative.w-full.py-6.flex.justify-between.items-center.text-left(type='button' x-description='Expand/collapse question button' aria-controls='disclosure-1' @click='open = !open' aria-expanded='true' x-bind:aria-expanded='open.toString()')
+            span.text-sm.font-medium(x-state:on='Open' x-state:off='Closed' :class="{ 'text-gray-800': open, 'text-gray-900': !(open) }")
+              | Features
+            span.ml-6.flex.items-center
+              svg.h-6.w-6.text-gray-400.hidden(class='group-hover:text-gray-500' x-state:on='Open' x-state:off='Closed' :class="{ 'hidden': open, 'block': !(open) }" x-description='Heroicon name: outline/plus-sm' xmlns='http://www.w3.org/2000/svg' fill='none' viewbox='0 0 24 24' stroke='currentColor' aria-hidden='true')
+                path(stroke-linecap='round' stroke-linejoin='round' stroke-width='2' d='M12 6v6m0 0v6m0-6h6m-6 0H6')
+              svg.h-6.w-6.text-themeColor.block(class='group-hover:text-themeColorHover' x-state:on='Open' x-state:off='Closed' :class="{ 'block': open, 'hidden': !(open) }" x-description='Heroicon name: outline/minus-sm' xmlns='http://www.w3.org/2000/svg' fill='none' viewbox='0 0 24 24' stroke='currentColor' aria-hidden='true')
+                path(stroke-linecap='round' stroke-linejoin='round' stroke-width='2' d='M18 12H6')
+        #disclosure-1.pb-6.prose.prose-sm(x-show='open')
+          ul(role='list')
+            li Multiple strap configurations
+            li Spacious interior with top zip
+            li Leather handle and tabs
+            li Interior dividers
+            li Stainless strap loops
+            li Double stitched construction
+            li Water-resistant
+      div(x-data='{ open: false }')
+        h3
+          button.group.relative.w-full.py-6.flex.justify-between.items-center.text-left(type='button' x-description='Expand/collapse question button' aria-controls='disclosure-1' @click='open = !open' aria-expanded='false' x-bind:aria-expanded='open.toString()')
+            span.text-gray-900.text-sm.font-medium(x-state:on='Open' x-state:off='Closed' :class="{ 'text-themeColor0': open, 'text-gray-900': !(open) }")
+              | Care
+            span.ml-6.flex.items-center
+              svg.block.h-6.w-6.text-gray-400(class='group-hover:text-gray-500' x-state:on='Open' x-state:off='Closed' :class="{ 'hidden': open, 'block': !(open) }" x-description='Heroicon name: outline/plus-sm' xmlns='http://www.w3.org/2000/svg' fill='none' viewbox='0 0 24 24' stroke='currentColor' aria-hidden='true')
+                path(stroke-linecap='round' stroke-linejoin='round' stroke-width='2' d='M12 6v6m0 0v6m0-6h6m-6 0H6')
+              svg.hidden.h-6.w-6.text-themeColor(class='group-hover:text-themeColorHover' x-state:on='Open' x-state:off='Closed' :class="{ 'block': open, 'hidden': !(open) }" x-description='Heroicon name: outline/minus-sm' xmlns='http://www.w3.org/2000/svg' fill='none' viewbox='0 0 24 24' stroke='currentColor' aria-hidden='true')
+                path(stroke-linecap='round' stroke-linejoin='round' stroke-width='2' d='M18 12H6')
+        #disclosure-1.pb-6.prose.prose-sm(x-show='open' style='display: none;')
+          ul(role='list')
+            li Spot clean as needed
+            li Hand wash with mild soap
+            li Machine wash interior dividers
+            li Treat handle and tabs with leather conditoner
+      div(x-data='{ open: false }')
+        h3
+          button.group.relative.w-full.py-6.flex.justify-between.items-center.text-left(type='button' x-description='Expand/collapse question button' aria-controls='disclosure-1' @click='open = !open' aria-expanded='false' x-bind:aria-expanded='open.toString()')
+            span.text-gray-900.text-sm.font-medium(x-state:on='Open' x-state:off='Closed' :class="{ 'text-themeColor': open, 'text-gray-900': !(open) }")
+              | Shipping
+            span.ml-6.flex.items-center
+              svg.block.h-6.w-6.text-gray-400(class='group-hover:text-gray-500' x-state:on='Open' x-state:off='Closed' :class="{ 'hidden': open, 'block': !(open) }" x-description='Heroicon name: outline/plus-sm' xmlns='http://www.w3.org/2000/svg' fill='none' viewbox='0 0 24 24' stroke='currentColor' aria-hidden='true')
+                path(stroke-linecap='round' stroke-linejoin='round' stroke-width='2' d='M12 6v6m0 0v6m0-6h6m-6 0H6')
+              svg.hidden.h-6(class='w-6group-hover:text-themeColorHover' x-state:on='Open' x-state:off='Closed' :class="{ 'block': open, 'hidden': !(open) }" x-description='Heroicon name: outline/minus-sm' xmlns='http://www.w3.org/2000/svg' fill='none' viewbox='0 0 24 24' stroke='currentColor' aria-hidden='true')
+                path(stroke-linecap='round' stroke-linejoin='round' stroke-width='2' d='M18 12H6')
+        #disclosure-1.pb-6.prose.prose-sm(x-show='open' style='display: none;')
+          ul(role='list')
+            li Free shipping on orders over $300
+            li International shipping available
+            li Expedited shipping options
+            li Signature required upon delivery
+      div(x-data='{ open: false }')
+        h3
+          button.group.relative.w-full.py-6.flex.justify-between.items-center.text-left(type='button' x-description='Expand/collapse question button' aria-controls='disclosure-1' @click='open = !open' aria-expanded='false' x-bind:aria-expanded='open.toString()')
+            span.text-gray-900.text-sm.font-medium(x-state:on='Open' x-state:off='Closed' :class="{ 'text-themeColor': open, 'text-gray-900': !(open) }")
+              | Returns
+            span.ml-6.flex.items-center
+              svg.block.h-6.w-6.text-gray-400(class='group-hover:text-gray-500' x-state:on='Open' x-state:off='Closed' :class="{ 'hidden': open, 'block': !(open) }" x-description='Heroicon name: outline/plus-sm' xmlns='http://www.w3.org/2000/svg' fill='none' viewbox='0 0 24 24' stroke='currentColor' aria-hidden='true')
+                path(stroke-linecap='round' stroke-linejoin='round' stroke-width='2' d='M12 6v6m0 0v6m0-6h6m-6 0H6')
+              svg.hidden.h-6.w-6(class='group-hover:text-themeColorHover' x-state:on='Open' x-state:off='Closed' :class="{ 'block': open, 'hidden': !(open) }" x-description='Heroicon name: outline/minus-sm' xmlns='http://www.w3.org/2000/svg' fill='none' viewbox='0 0 24 24' stroke='currentColor' aria-hidden='true')
+                path(stroke-linecap='round' stroke-linejoin='round' stroke-width='2' d='M18 12H6')
+        #disclosure-1.pb-6.prose.prose-sm(x-show='open' style='display: none;')
+          ul(role='list')
+            li Easy return requests
+            li Pre-paid shipping label included
+            li 10% restocking fee for returns
+            li 60 day return window
+  // end Dropdown Tabs Tailwind Compoennt Details

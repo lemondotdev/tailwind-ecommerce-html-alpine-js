@@ -631,7 +631,7 @@
                       </div>
                     </div>
                   </div>
-
+                  <!---DONE -->
                   <div class="flex" x-data="{ isOpen: false}">
                     <div class="relative flex">
                       <!-- Item active: "border-indigo-600 text-indigo-600", Item inactive: "border-transparent text-gray-700 hover:text-gray-800" -->
@@ -854,6 +854,49 @@
     <!-- Lemon Navigation End-->
 
     <div class="bg-white hero-section">
+      <div class="bg-indigo-100 h-screen flex justify-center pt-64">
+
+        <div class="w-full max-w-4xl">
+          <div class="mx-auto relative w-full" x-data="carouselData([
+                     { id: 1, text: 'First' },
+                     { id: 2, text: 'Second' },
+                     { id: 3, text: 'Third' },
+                     { id: 4, text: 'Forth' },
+                     { id: 5, text: 'Fifth' }
+             ])">
+      
+            <!-- Slides -->
+            <template x-for="slide in slides" :key="slide.id">
+              <div x-show="activeSlide === slide.id" class="p-24 font-bold text-5xl h-64 flex items-center bg-indigo-600 text-white rounded">
+                <span class="w-12 text-center" x-text="slide.text"></span>
+              </div>
+            </template>
+      
+            <!-- Prev/Next Arrows -->
+            <div class="absolute inset-0 flex">
+              <div class="flex items-center justify-start w-1/2">
+                <button @click="goToPrevious()" class="bg-white text-gray-500 hover:text-indigo-500 font-bold hover:shadow-lg rounded-full w-12 h-12 -ml-6 focus:outline-none">
+                  &#8592;
+                </button>
+              </div>
+      
+              <div class="flex items-center justify-end w-1/2">
+                <button @click="goToNext()" class="bg-white text-indigo-500 hover:text-indigo-500 font-bold hover:shadow-lg rounded-full w-12 h-12 -mr-6 focus:outline-none">
+                  &#8594;
+                </button>
+              </div>
+            </div>
+      
+            <!-- Buttons -->
+            <div class="absolute w-full flex items-center justify-center px-4 bottom-2">
+              <template x-for="slide in slides" :key="slide.id">
+                <button @click="activeSlide = slide.id" :class="{ 'bg-indigo-800': activeSlide === slide.id, 'bg-white': activeSlide !== slide.id }" class="w-4 h-2 mt-4 mx-2 mb-0 rounded-full overflow-hidden transition-colors duration-200 ease-out hover:bg-indigo-600 hover:shadow-lg focus:outline-none"></button>
+              </template>
+            </div>
+          </div>
+        </div>
+      
+      </div>
       <!-- Homepage Components -->
       <main>
         <!-- Hero section -->
@@ -1307,7 +1350,6 @@
               </div>
             </div>
           </div>
-
           <div class="border-t border-gray-100 py-10 text-center">
             <p class="text-sm text-gray-500">&copy; 2021 Lemon.Dev, Inc. All rights reserved.</p>
           </div>
@@ -1319,6 +1361,20 @@
   </div>
   <script src="https://cdn.jsdelivr.net/gh/alpinejs/alpine@v2.8.2/dist/alpine.min.js" defer></script>
   <script>
+    function carouselData(slides) {
+      return {
+        slides,
+        activeSlide: 1,
+        goToPrevious() {
+          this.activeSlide =
+            this.activeSlide === 1 ? this.slides.length : this.activeSlide - 1;
+        },
+        goToNext() {
+          this.activeSlide =
+            this.activeSlide === this.slides.length ? 1 : this.activeSlide + 1;
+        }
+      };
+    }
   </script>
 </body>
 </html>

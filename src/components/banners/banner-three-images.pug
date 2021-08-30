@@ -1,0 +1,65 @@
+.relative
+  // Background image and overlap
+  .hidden.absolute.inset-0(aria-hidden='true' class='sm:flex sm:flex-col')
+    .flex-1.relative.w-full.bg-gray-800
+      .absolute.inset-0.overflow-hidden
+        img.w-full.h-full.object-center.object-cover(src='https://tailwindui.com/img/ecommerce-images/home-page-04-hero-full-width.jpg' alt='')
+      .absolute.inset-0.bg-gray-900.opacity-50
+    .w-full.bg-white.h-32(class='md:h-40 lg:h-48')
+  .relative.max-w-3xl.mx-auto.pb-96.px-4.text-center(class='sm:pb-0 sm:px-6 lg:px-8')
+    // Background image and overlap
+    .absolute.inset-0.flex.flex-col(aria-hidden='true' class='sm:hidden')
+      .flex-1.relative.w-full.bg-gray-800
+        .absolute.inset-0.overflow-hidden
+          img.w-full.h-full.object-center.object-cover(src='https://tailwindui.com/img/ecommerce-images/home-page-04-hero-full-width.jpg' alt='')
+        .absolute.inset-0.bg-gray-900.opacity-50
+      .w-full.bg-white.h-48
+    .relative.py-32
+      h1.text-4xl.font-extrabold.tracking-tight.text-white(class='sm:text-5xl md:text-6xl') Mid-Season Sale
+      .mt-4(class='sm:mt-6')
+        a.inline-block.bg-themeColor.rounded-md.py-3.px-8.font-medium(href='#' class='hover:bg-themeColorHover') Shop Collection
+  section.-mt-96.relative(aria-labelledby='collection-heading' class='sm:mt-0')
+    h2#collection-heading.sr-only Collections
+    .max-w-md.mx-auto.grid.grid-cols-1.gap-y-6.px-4(class='sm:max-w-7xl sm:px-6 sm:grid-cols-3 sm:gap-y-0 sm:gap-x-6 lg:px-8 lg:gap-x-8')
+      .group.relative.h-96.bg-white.rounded-lg.shadow-xl(class='sm:h-auto sm:aspect-w-4 sm:aspect-h-5')
+        div
+          .absolute.inset-0.rounded-lg.overflow-hidden(aria-hidden='true')
+            .absolute.inset-0.overflow-hidden(class='group-hover:opacity-75')
+              img.w-full.h-full.object-center.object-cover(src='https://tailwindui.com/img/ecommerce-images/home-page-04-collection-01.jpg' alt='Woman wearing a comfortable cotton t-shirt.')
+            .absolute.inset-0.bg-gradient-to-b.from-transparent.to-black.opacity-50
+          .absolute.inset-0.rounded-lg.p-6.flex.items-end
+            div
+              p.text-sm.text-white(aria-hidden='true')
+                | Shop the collection
+              h3.mt-1.font-semibold.text-white
+                a(href='#')
+                  span.absolute.inset-0
+                  |                           Womens
+      .group.relative.h-96.bg-white.rounded-lg.shadow-xl(class='sm:h-auto sm:aspect-w-4 sm:aspect-h-5')
+        div
+          .absolute.inset-0.rounded-lg.overflow-hidden(aria-hidden='true')
+            .absolute.inset-0.overflow-hidden(class='group-hover:opacity-75')
+              img.w-full.h-full.object-center.object-cover(src='https://tailwindui.com/img/ecommerce-images/home-page-04-collection-02.jpg' alt='Man wearing a comfortable and casual cotton t-shirt.')
+            .absolute.inset-0.bg-gradient-to-b.from-transparent.to-black.opacity-50
+          .absolute.inset-0.rounded-lg.p-6.flex.items-end
+            div
+              p.text-sm.text-white(aria-hidden='true')
+                | Shop the collection
+              h3.mt-1.font-semibold.text-white
+                a(href='#')
+                  span.absolute.inset-0
+                  |                           Mens
+      .group.relative.h-96.bg-white.rounded-lg.shadow-xl(class='sm:h-auto sm:aspect-w-4 sm:aspect-h-5')
+        div
+          .absolute.inset-0.rounded-lg.overflow-hidden(aria-hidden='true')
+            .absolute.inset-0.overflow-hidden(class='group-hover:opacity-75')
+              img.w-full.h-full.object-center.object-cover(src='https://tailwindui.com/img/ecommerce-images/home-page-04-collection-03.jpg' alt='Person sitting at a wooden desk with paper note organizer, pencil and tablet.')
+            .absolute.inset-0.bg-gradient-to-b.from-transparent.to-black.opacity-50
+          .absolute.inset-0.rounded-lg.p-6.flex.items-end
+            div
+              p.text-sm.text-white(aria-hidden='true')
+                | Shop the collection
+              h3.mt-1.font-semibold.text-white
+                a(href='#')
+                  span.absolute.inset-0
+                  |                           Desk Accessories

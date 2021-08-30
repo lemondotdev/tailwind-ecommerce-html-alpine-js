@@ -1,0 +1,30 @@
+doctype html
+html(lang="en")
+  head
+    meta(charset="UTF-8")
+    meta(http-equiv="X-UA-Compatible" content="IE=edge")
+    meta(name="viewport" content="width=device-width, initial-scale=1.0")
+    link(rel="stylesheet" href="style.css")
+    link(rel="shortcut icon" href="favicon.ico" type="image/x-icon")
+    title= LemonDev
+  body.bg-yellow
+    div.lemon-wrap
+      //Header
+      include ./global/navigation.pug
+      // Shop Page
+      include ./components/global/breadcrumbs-list.pug
+      .shop-handle(x-data='{ open: false }' @keydown.window.escape='open = false')
+          include ./components/shop-details/mobile-filtering.pug
+      // Shop Details
+      main(class="max-w-2xl mx-auto px-4 lg:max-w-7xl lg:px-8")
+        include ./components/shop-details/shop-heading.pug
+        include ./components/shop-details/shop-container-content.pug
+
+          
+      //Footer
+      bg-white.hero-section
+        include ./global/footer.pug
+
+  //Script JS
+  script(src='../src/js/alpine.js' defer)
+  script(src='../src/js/tailwind-js.js')

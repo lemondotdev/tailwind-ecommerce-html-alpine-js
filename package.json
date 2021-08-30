@@ -4,7 +4,10 @@
   "description": "Liv theme html components with Tailwind CSS and Alpine - E-commerce Theme Liv",
   "main": "index.js",
   "scripts": {
-    "build:css": "tailwind build src/style.css -o dist/style.css"
+    "build:html": "npx pug -o build -O src/index.yaml src",
+    "build:css": "tailwind build src/style.css -o dist/style.css",
+    "build:dev": "npm run build:html -- --pretty && npm run build:css && cp -r dist/* build",
+    "start": "npm run build:css -- --watch --verbose | npm run build:html -- --pretty --watch"
   },
   "keywords": [],
   "author": "",
@@ -14,7 +17,11 @@
     "@tailwindcss/forms": "^0.3.3",
     "@tailwindcss/typography": "^0.4.1",
     "autoprefixer": "^10.2.5",
+    "npx": "^10.2.2",
     "postcss": "^8.2.8",
+    "pug": "^3.0.2",
+    "pug-cli": "^1.0.0-alpha6",
+    "swiper": "^7.0.1",
     "tailwindcss": "^2.0.4"
   }
 }

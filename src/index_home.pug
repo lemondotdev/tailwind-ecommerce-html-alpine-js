@@ -1,0 +1,27 @@
+doctype html
+html(lang="en")
+  head
+    meta(charset="UTF-8")
+    meta(http-equiv="X-UA-Compatible" content="IE=edge")
+    meta(name="viewport" content="width=device-width, initial-scale=1.0")
+    link(rel="stylesheet" href="style.css")
+    link(rel="shortcut icon" href="favicon.ico" type="image/x-icon")
+    title= LemonDev
+  body.bg-yellow
+    div.lemon-wrap
+      //Header
+      include ./global/navigation.pug
+      //Homepage Components
+      main 
+        include ./components/banners/banner-three-images.pug
+        include ./components/product-sections/tranding-products.pug
+        include ./components/perks-and-returns/perks-returns.pug
+        include ./components/banners/promo-section-banner.pug
+        include ./components/banners/promo-section-instock.pug
+
+      //Footer
+      bg-white.hero-section
+        include ./global/footer.pug
+
+  //Script JS
+  script(src='../src/js/alpine.js' defer)

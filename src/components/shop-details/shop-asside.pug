@@ -1,0 +1,92 @@
+aside
+  h2.sr-only Filters
+  // Mobile filter dialog toggle, controls the 'mobileFilterDialogOpen' state.
+  button.inline-flex.items-center(type='button' x-description="Mobile filter dialog toggle, controls the 'mobileFilterDialogOpen' state." class='lg:hidden' @click='open = true')
+    span.text-sm.font-medium.text-gray-700 Filters
+    svg.flex-shrink-0.ml-1.h-5.w-5.text-gray-400(x-description='Heroicon name: solid/plus-sm' xmlns='http://www.w3.org/2000/svg' viewbox='0 0 20 20' fill='currentColor' aria-hidden='true')
+      path(fill-rule='evenodd' d='M10 5a1 1 0 011 1v3h3a1 1 0 110 2h-3v3a1 1 0 11-2 0v-3H6a1 1 0 110-2h3V6a1 1 0 011-1z' clip-rule='evenodd')
+  .hidden(class='lg:block')
+    form.divide-y.divide-gray-200.space-y-10
+      div
+        fieldset
+          legend.block.text-sm.font-medium.text-gray-900
+            | Color
+          .pt-6.space-y-3
+            .flex.items-center
+              input#color-0.h-4.w-4.border-gray-300.rounded.text-themeColorHover(name='color[]' value='white' type='checkbox' class='focus:ring-themeColor')
+              label.ml-3.text-sm.text-gray-600(for='color-0')
+                | White
+            .flex.items-center
+              input#color-1.h-4.w-4.border-gray-300.rounded.text-themeColorHover(name='color[]' value='beige' type='checkbox' class='focus:ring-themeColor')
+              label.ml-3.text-sm.text-gray-600(for='color-1')
+                | Beige
+            .flex.items-center
+              input#color-2.h-4.w-4.border-gray-300.rounded.text-themeColorHover(name='color[]' value='blue' type='checkbox' class='focus:ring-themeColor')
+              label.ml-3.text-sm.text-gray-600(for='color-2')
+                | Blue
+            .flex.items-center
+              input#color-3.h-4.w-4.border-gray-300.rounded.text-themeColorHover(name='color[]' value='brown' type='checkbox' class='focus:ring-themeColor')
+              label.ml-3.text-sm.text-gray-600(for='color-3')
+                | Brown
+            .flex.items-center
+              input#color-4.h-4.w-4.border-gray-300.rounded.text-themeColorHover(name='color[]' value='green' type='checkbox' class='focus:ring-themeColor')
+              label.ml-3.text-sm.text-gray-600(for='color-4')
+                | Green
+            .flex.items-center
+              input#color-5.h-4.w-4.border-gray-300.rounded.text-themeColorHover(name='color[]' value='purple' type='checkbox' class='focus:ring-themeColor')
+              label.ml-3.text-sm.text-gray-600(for='color-5')
+                | Purple
+      .pt-10
+        fieldset
+          legend.block.text-sm.font-medium.text-gray-900
+            | Category
+          .pt-6.space-y-3
+            .flex.items-center
+              input#category-0.h-4.w-4.border-gray-300.rounded.text-themeColorHover(name='category[]' value='new-arrivals' type='checkbox' class='focus:ring-themeColor')
+              label.ml-3.text-sm.text-gray-600(for='category-0')
+                | All New Arrivals
+            .flex.items-center
+              input#category-1.h-4.w-4.border-gray-300.rounded.text-themeColorHover(name='category[]' value='tees' type='checkbox' class='focus:ring-themeColor')
+              label.ml-3.text-sm.text-gray-600(for='category-1')
+                | Tees
+            .flex.items-center
+              input#category-2.h-4.w-4.border-gray-300.rounded.text-themeColorHover(name='category[]' value='crewnecks' type='checkbox' class='focus:ring-themeColor')
+              label.ml-3.text-sm.text-gray-600(for='category-2')
+                | Crewnecks
+            .flex.items-center
+              input#category-3.h-4.w-4.border-gray-300.rounded.text-themeColorHover(name='category[]' value='sweatshirts' type='checkbox' class='focus:ring-themeColor')
+              label.ml-3.text-sm.text-gray-600(for='category-3')
+                | Sweatshirts
+            .flex.items-center
+              input#category-4.h-4.w-4.border-gray-300.rounded.text-themeColorHover(name='category[]' value='pants-shorts' type='checkbox' class='focus:ring-themeColor')
+              label.ml-3.text-sm.text-gray-600(for='category-4')
+                | Pants &amp; Shorts
+      .pt-10
+        fieldset
+          legend.block.text-sm.font-medium.text-gray-900
+            | Sizes
+          .pt-6.space-y-3
+            .flex.items-center
+              input#sizes-0.h-4.w-4.border-gray-300.rounded.text-themeColorHover(name='sizes[]' value='xs' type='checkbox' class='focus:ring-themeColor')
+              label.ml-3.text-sm.text-gray-600(for='sizes-0')
+                | XS
+            .flex.items-center
+              input#sizes-1.h-4.w-4.border-gray-300.rounded.text-themeColorHover(name='sizes[]' value='s' type='checkbox' class='focus:ring-themeColor')
+              label.ml-3.text-sm.text-gray-600(for='sizes-1')
+                | S
+            .flex.items-center
+              input#sizes-2.h-4.w-4.border-gray-300.rounded.text-themeColorHover(name='sizes[]' value='m' type='checkbox' class='focus:ring-themeColor')
+              label.ml-3.text-sm.text-gray-600(for='sizes-2')
+                | M
+            .flex.items-center
+              input#sizes-3.h-4.w-4.border-gray-300.rounded.text-themeColorHover(name='sizes[]' value='l' type='checkbox' class='focus:ring-themeColor')
+              label.ml-3.text-sm.text-gray-600(for='sizes-3')
+                | L
+            .flex.items-center
+              input#sizes-4.h-4.w-4.border-gray-300.rounded.text-themeColorHover(name='sizes[]' value='xl' type='checkbox' class='focus:ring-themeColor')
+              label.ml-3.text-sm.text-gray-600(for='sizes-4')
+                | XL
+            .flex.items-center
+              input#sizes-5.h-4.w-4.border-gray-300.rounded.text-themeColorHover(name='sizes[]' value='2xl' type='checkbox' class='focus:ring-themeColor')
+              label.ml-3.text-sm.text-gray-600(for='sizes-5')
+                | 2XL

@@ -23,3 +23,18 @@ button:focus {
 input[type="checkbox"]{
   color: #c9dc90;
 }
+
+
+.snap {
+  -ms-scroll-snap-type: x mandatory;
+  scroll-snap-type: x mandatory;
+  -ms-overflow-style: none;
+  scroll-behavior: smooth
+}
+.snap::-webkit-scrollbar {
+  display: none;
+}
+
+.snap > div {
+  scroll-snap-align: center;
+}
