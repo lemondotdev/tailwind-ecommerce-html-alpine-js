@@ -1,4 +1,4 @@
-const {src, dest} = require('gulp');
+const {watch, src, dest} = require('gulp');
 var concat = require('gulp-concat');
 
 const allScripts = () => 

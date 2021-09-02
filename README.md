@@ -18,7 +18,7 @@ npm build:html: builds pug into html into Build folder
 npm build:css: builds css
 
 
-npm build:dev: build pug into pretty html and css without purging
+npm build:dev: build pug into pretty html and css without purging, js build concat through gulp
 
 # how to run
 Using Live Server 

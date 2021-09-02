@@ -15,7 +15,8 @@ module.exports = {
       white: colors.white,
       transparent: colors.transparent,
       themeColor: '#daf196',
-      themeColorHover: '#c9dc90'
+      themeColorHover: '#c9dc90',
+      themeActiveNumber: '#111827'
     },
     fontFamily: {
       sans: ['Be Vietnam', 'sans-serif']
