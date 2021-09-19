@@ -8,7 +8,7 @@
     "build:html": "npx pug -o build -O src/index.yaml src",
     "build:css": "tailwind build src/style.css -o dist/style.css",
     "build:dev": "npm run build:html -- --pretty && npm run build:css && gulp allScripts",
-    "start": "npm run build:css -- --watch --verbose | npm run build:html -- --pretty --watch" 
+    "start": "npm run build:css -- --watch --verbose | npm run build:html -- --pretty --watch && gulp allScripts" 
   },
   "keywords": [],
   "author": "",
